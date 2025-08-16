@@ -1,0 +1,65 @@
+# Development files
+notebook/
+*.ipynb
+*.ipynb_checkpoints/
+
+# CatBoost artifacts (no longer needed)
+catboost_info/
+*.tsv
+*.json
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Package build artifacts
+mlproject.egg-info/
+build/
+dist/
+*.egg
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Documentation (not needed in container)
+README.md
+DOCKER_GUIDE.md
+AWS_DEPLOYMENT_GUIDE.md
+
+# Deployment files (not needed in container)
+deploy_to_aws.py
+Procfile
+.ebextensions/
+
+# Test files
+test_pipeline.py
+
+# Duplicate requirements file
+requirments.txt
+
+# Setup file (not needed in container)
+Setup.py
+
+# Logs (will be created in container)
+logs/
+*.log

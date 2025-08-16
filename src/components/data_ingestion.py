@@ -28,8 +28,8 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info("Entered the data ingestion method or component")
         try:
-            # Use os.path.join for cross-platform compatibility
-            data_path = os.path.join(project_root, 'notebook', 'data', 'stud.csv')
+            # Use artifact directory for data file
+            data_path = os.path.join('artifact', 'stud.csv')
             
             # Check if source file exists
             if not os.path.exists(data_path):
